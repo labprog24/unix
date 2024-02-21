@@ -1,0 +1,16 @@
+-> sudo apt update
+-> sudo apt install apache2
+-> sudo ufw allow in "Apache"
+-> sudo ufw allow ssh
+-> sudo ufw app list
+<After this, to check whether Apache is running or not, you can open a web browser and type "localhost" or "127.0.0.1". If a pdf shows up about Apache, then the software is running>
+-> sudo apt install mysql mysql-server
+-> sudo mysql -u root -p
+-> sudo apt install php libapache2-mod-php php-mysql
+-> sudo apt install php-sqlite3
+-> sudo service apache2 restart
+-> sudo gedit /var/www/html/info.php
+<?php
+phpinfo();
+?>
+<After this, go to your web browser and type 'localhost/info.php' or '127.0.0.1/info.php'. If a file shows up, then web server is successfully set up. Else, it should be debugged.>
